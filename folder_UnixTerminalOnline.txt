@@ -1,0 +1,23 @@
+sh-4.4$ /bin/bash                                                                                                                                        
+bash-4.4$ mkdir folder                                                                                                                                   
+bash-4.4$ cd folder                                                                                                                                      
+bash-4.4$ touch test_{A..E}                                                                                                                              
+bash-4.4$ date | tee test_{A..E}                                                                                                                         
+Fri Oct 20 18:37:13 UTC 2017                                                                                                                             
+bash-4.4$ ls                                                                                                                                             
+test_A  test_B  test_C  test_D  test_E                                                                                                                   
+bash-4.4$ cat test_{A..E}                                                                                                                                
+Fri Oct 20 18:37:13 UTC 2017                                                                                                                             
+Fri Oct 20 18:37:13 UTC 2017                                                                                                                             
+Fri Oct 20 18:37:13 UTC 2017                                                                                                                             
+Fri Oct 20 18:37:13 UTC 2017                                                                                                                             
+Fri Oct 20 18:37:13 UTC 2017                                                                                                                             
+bash-4.4$ grep -ch 2017 test_{A..E} | wc -l                                                                                                              
+5                                                                                                                                                        
+bash-4.4$ cd ../                                                                                                                                         
+bash-4.4$ pwd                                                                                                                                            
+/home/cg/root                                                                                                                                            
+bash-4.4$ rm -rf folder                                                                                                                                  
+bash-4.4$ ls                                                                                                                                             
+README.txt                                                                                                                                               
+bash-4.4$                                                                                                                                                
